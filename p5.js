@@ -121,10 +121,10 @@
 
   <script>
     const produtos = [
-      { nome: "Ryzen 7 5800X3D", preco: "R$ 1.999,00", imagem: "https://placehold.co/200x200?text=Ryzen+7" },
-      { nome: "RTX 4070 12GB", preco: "R$ 3.499,00", imagem: "https://placehold.co/200x200?text=RTX+4070" },
-      { nome: "Intel Core i9", preco: "R$ 2.850,00", imagem: "https://placehold.co/200x200?text=Intel+i9" },
-      { nome: "Placa-Mãe ASUS", preco: "R$ 999,00", imagem: "https://placehold.co/200x200?text=ASUS+MB" },
+      { nome: "Ryzen 7 9800X3D", preco: "R$ 2.899,99", imagem: "https://placehold.co/200x200?text=Ryzen+7" },
+      { nome: "RTX 5090 32GB", preco: "R$ 17.999,90", imagem: "https://placehold.co/200x200?text=RTX+4070" },
+      { nome: "Intel Core i9 14900K", preco: "R$ 3.199,99", imagem: "https://placehold.co/200x200?text=Intel+i9" },
+      { nome: "Placa-Mãe ASUS ROG Crosshair X670E", preco: "R$ 7.853,16", imagem: "https://placehold.co/200x200?text=ASUS+MB" },
     ];
 
     const container = document.getElementById("produtos");
