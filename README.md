@@ -1,1 +1,1 @@
-# Ht
+https://github.com/RodriguesZxy/Ht/blob/main/rtx-50-series-gpu-removebg-preview.png
