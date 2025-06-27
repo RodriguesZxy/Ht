@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Restore - Loja Gamer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #111;
+    }
+    header img.logo {
+      height: 40px;
+    }
+    .search-box input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 4px;
+      border: none;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      padding: 15px;
+      background-color: #222;
+      overflow-x: auto;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background: linear-gradient(to right, #222, #000);
+      padding: 40px;
+      text-align: center;
+    }
+    .banner h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .produto {
+      background-color: #111;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .produto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .produto button {
+      margin-top: 10px;
+      background-color: crimson;
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #111;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://placehold.co/150x40?text=Modern+Restore" alt="Logo">
+    <div class="search-box">
+      <input type="text" placeholder="Pesquise o seu produto...">
+    </div>
+    <div>
+      <span>Olá, Entre ou Cadastre-se</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">DEPARTAMENTOS</a>
+    <a href="#">PROMOÇÕES</a>
+    <a href="#">PC GAMER</a>
+    <a href="#">KIT UPGRADE</a>
+    <a href="#">HARDWARE</a>
+    <a href="#">NOTEBOOKS</a>
+    <a href="#">MONITORES</a>
+    <a href="#">MONTE SEU PC</a>
+    <a href="#">ATENDIMENTO</a>
+  </nav>
+
+  <div class="banner">
+    <h1>GIGABYTE™ - JOGUE COMO UM PRO</h1>
+    <p>GeForce RTX Série 50 com DLSS 3 e Ray Tracing</p>
+  </div>
+
+  <section class="produtos" id="produtos">
+    <!-- Produtos serão carregados aqui via JS -->
+  </section>
+
+  <footer>
+    &copy; 2025 Modern Restore - Todos os direitos reservados
+  </footer>
+
+  <script>
+    const produtos = [
+      { nome: "Ryzen 7 5800X3D", preco: "R$ 1.999,00", imagem: "https://placehold.co/200x200?text=Ryzen+7" },
+      { nome: "RTX 4070 12GB", preco: "R$ 3.499,00", imagem: "https://placehold.co/200x200?text=RTX+4070" },
+      { nome: "Intel Core i9", preco: "R$ 2.850,00", imagem: "https://placehold.co/200x200?text=Intel+i9" },
+      { nome: "Placa-Mãe ASUS", preco: "R$ 999,00", imagem: "https://placehold.co/200x200?text=ASUS+MB" },
+    ];
+
+    const container = document.getElementById("produtos");
+    produtos.forEach(p => {
+      const div = document.createElement("div");
+      div.className = "produto";
+      div.innerHTML = `
+        <img src="${p.imagem}" alt="${p.nome}">
+        <h3>${p.nome}</h3>
+        <p>${p.preco}</p>
+        <button>Comprar</button>
+      `;
+      container.appendChild(div);
+    });
+  </script>
+
+</body>
+</html>
